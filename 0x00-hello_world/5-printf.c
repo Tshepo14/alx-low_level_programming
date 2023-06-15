@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints the message using the puts function.
+ * Description: Prints the message using the printf function.
  *
  * Return: Always 0 (indicating success)
  */
