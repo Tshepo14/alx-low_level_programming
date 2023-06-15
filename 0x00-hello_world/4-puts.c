@@ -1,8 +1,12 @@
 #include <stdio.h>
 /**
- * main - entry point
- * Description: a c program that prints with puts funtion
- * return: o (success)
+ *
+ *main - entry point
+ * 
+ *Description: a c program that prints with puts funtion
+ *
+ *return: o (success)
+ *
  */
 int main(void)
 {
