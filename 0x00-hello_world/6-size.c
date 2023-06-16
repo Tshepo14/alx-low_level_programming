@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints the size of various types on the computer it is compiled and run on.
+ * Description: Prints the size of various types
  *
  * Return: Always 0 (indicating success)
  */
