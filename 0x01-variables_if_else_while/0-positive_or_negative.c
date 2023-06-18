@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+/* more headers go here */
 
 /**
  * main - Entry point of the program
@@ -14,9 +15,8 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
 
-	/* Your code goes here */
+	n = rand() - RAND_MAX / 2;
 
 	return (0);
 }
