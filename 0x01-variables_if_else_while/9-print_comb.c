@@ -2,24 +2,24 @@
 
 /**
  * main - Entry point of the program
+ *
+ * Description: Prints all possible combinations of single-digit numbers
+ *              separated by comma and space.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int digit1, digit2;
+	int num;
 
-	for (digit1 = 0; digit1 <= 9; digit1++)
+	for (num = 0; num < 10; num++)
 	{
-		for (digit2 = digit1; digit2 <= 9; digit2++)
-		{
-			putchar(digit1 + '0');
-			putchar(digit2 + '0');
+		putchar(num + '0');
 
-			if (digit1 != 9 || digit2 != 9)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+		if (num != 9)
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
@@ -27,4 +27,3 @@ int main(void)
 
 	return (0);
 }
-
