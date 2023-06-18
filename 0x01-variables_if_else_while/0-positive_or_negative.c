@@ -1,12 +1,12 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
-/* more headers go here */
 
 /**
  * main - Entry point of the program
  *
- * Description: Generates a random number and stores it in the variable n.
- *              Prints the value of n.
+ * Description: Assigns a random number to the variable n and prints whether
+ *              the number is positive, zero, or negative.
  *
  * Return: Always 0 (Success)
  */
@@ -15,9 +15,22 @@ int main(void)
 	int n;
 
 	srand(time(0));
-
 	n = rand() - RAND_MAX / 2;
+	printf("The number %d ", n);
 
+	if (n > 0)
+	{
+	printf("is positive");
+	}
+	else if (n == 0)
+	{
+	printf("is zero");
+	}
+	else
+	{
+	printf("is negative");
+	}
+	printf("\n");
 	return (0);
 }
 
