@@ -7,22 +7,24 @@
  */
 int main(void)
 {
-	int i;
-	unsigned long long int fib1 = 1, fib2 = 2, fib;
+	int i = 0;
+	long j = 1, k = 2;
 
-	printf("%llu, %llu", fib1, fib2);
-
-	for (i = 3; i <= 50; i++)
+	while (i < 50)
 	{
-		fib = fib1 + fib2;
-		printf(", %llu", fib);
-
-		fib1 = fib2;
-		fib2 = fib;
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
+	else
+	{
+		k += j;
+		j = k - j;
+		printf(", %ld", k);
 	}
-
-	putchar('\n');
-
-	return 0;
+	++i;
+	}
+	printf("\n");
+		return (0);
 }
 
