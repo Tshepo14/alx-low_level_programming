@@ -6,13 +6,12 @@
 #include <string.h>
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
+ * struct list_s - Linked list node
+ * @str: String (malloc'ed string)
+ * @len: Length of the string
+ * @next: Pointer to the next node
  *
- * Description: singly linked list node structure
- * for ALX project
+ * Description: Basic singly linked list structure
  */
 typedef struct list_s
 {
